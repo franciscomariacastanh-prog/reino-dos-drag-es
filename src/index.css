@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #0a0a0c;
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-tech {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .font-serif-majestic {
+    font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 88, 12, 0.5);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 15px rgba(234, 88, 12, 0.6)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 35px rgba(249, 115, 22, 0.9)); }
+}
+
+@keyframes pulse-tech {
+  0%, 100% { filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.7)); }
+  50% { filter: drop-shadow(0 0 32px rgba(59, 130, 246, 1)); }
+}
+
+@keyframes egg-shake {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(8deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(5deg); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.animate-pulse-tech {
+  animation: pulse-tech 2s ease-in-out infinite;
+}
+
+.animate-egg-shake {
+  animation: egg-shake 0.8s ease-in-out infinite;
+}
+

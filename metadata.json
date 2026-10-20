@@ -1,0 +1,6 @@
+{
+  "name": "Reino dos Dragões: Titã de Magma",
+  "description": "Jogo de aventura dracônica com mundo 3D estilo Dragon Adventures e modo Multiplayer em tempo real, onde voas em conjunto, exploras a pé, chocas ovos na base e aproveitas poderes exclusivos do Criador Titã.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
